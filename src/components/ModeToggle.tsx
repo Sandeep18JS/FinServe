@@ -10,10 +10,10 @@ type isCollapsed = {
 };
 
 export function ModeToggle({ isCollapsed }: isCollapsed) {
-  const { theme, setTheme } = useTheme();
+  const { theme, setTheme } = useTheme("light");
 
   const toggleTheme = () => {
-    setTheme(theme === "light" ? "light" : "dark");
+    setTheme(theme === "dark" ? "light" : "dark");
   };
 
   return (
