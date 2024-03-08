@@ -13,7 +13,7 @@ export function ModeToggle({ isCollapsed }: isCollapsed) {
   const { theme, setTheme } = useTheme();
 
   const toggleTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
+    setTheme(theme === "dark" ? "light" : "dark");
   };
 
   return (
@@ -27,10 +27,10 @@ export function ModeToggle({ isCollapsed }: isCollapsed) {
           className="rounded-full absolute top-[2px]"
           onClick={toggleTheme}
         >
-          {theme === "dark" ? (
-            <Sun className="h-4 w-4 ml-[18px] text-black dark:text-black bg-black rounded-full" />
+          {theme === "light" ? (
+             <Moon className="h-4 w-4 ml-[2px] text-white dark:text-white bg-white rounded-full" />
           ) : (
-            <Moon className="h-4 w-4 ml-[2px] text-white dark:text-white bg-white rounded-full" />
+             <Sun className="h-4 w-4 ml-[18px] text-black dark:text-black bg-black rounded-full" />
           )}
         </button>
       </div>
