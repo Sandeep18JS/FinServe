@@ -15,7 +15,6 @@ export function ModeToggle({ isCollapsed }: isCollapsed) {
   const toggleTheme = () => {
     setTheme(theme === "dark" ? "light" : "dark");
   };
-
   return (
     <div className=" flex flex-row ml-10 mt-5 gap-2">
       <div
@@ -27,10 +26,10 @@ export function ModeToggle({ isCollapsed }: isCollapsed) {
           className="rounded-full absolute top-[2px]"
           onClick={toggleTheme}
         >
-          {theme === "dark" ? (
-            <Sun className="h-4 w-4 ml-[18px] text-black dark:text-black bg-black rounded-full" />
-          ) : (
+          {theme === "light" ? (
             <Moon className="h-4 w-4 ml-[2px] text-white dark:text-white bg-white rounded-full" />
+          ) : (
+            <Sun className="h-4 w-4 ml-[18px] text-black dark:text-black bg-black rounded-full" />
           )}
         </button>
       </div>
