@@ -13,7 +13,7 @@ export function ModeToggle({ isCollapsed }: isCollapsed) {
   const { theme, setTheme } = useTheme();
 
   const toggleTheme = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
+    setTheme(theme === "light" ? "light" : "dark");
   };
 
   return (
