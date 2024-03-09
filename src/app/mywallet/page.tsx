@@ -90,7 +90,7 @@ export default function MyWallet({}: Props) {
 
               <CreditCard color="blue" />
               <CreditCard color="orange" />
-              <button className="mx-7 border border-blue-900 text-blue-700 rounded-lg p-2 font-medium text-sm hover:text-white hover:bg-blue-700">
+              <button className="mx-10 border border-blue-900 text-blue-700 rounded-lg p-2 font-medium text-sm hover:text-white hover:bg-blue-700">
                 Manage Cards
               </button>
             </CardWrapper>
@@ -104,7 +104,7 @@ export default function MyWallet({}: Props) {
 
               <div className="flex gap-16 mx-auto ">
                 {icons.map((icon, index) => (
-                  <div key={index} className="flex flex-col gap-2">
+                  <div key={index} className="flex flex-col gap-2.5">
                     <button className="w-14 h-14 border rounded-lg justify-center items-center flex">
                       <icon.icon color="#355FE5" />
                     </button>

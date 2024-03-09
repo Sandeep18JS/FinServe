@@ -16,7 +16,7 @@ export default function CreditCard(props: Props) {
   return (
     <Card
       className={cn(
-        "w-[320px]  mx-auto relative flex flex-col rounded-2xl  gap-10 text-white",
+        "w-[300px]  mx-auto relative flex flex-col rounded-2xl  gap-8 text-white",
         {
           "bg-blue-600": props.color === "blue",
           "bg-orange-600": props.color === "orange",
