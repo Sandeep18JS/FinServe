@@ -126,14 +126,22 @@ export default function MyWallet({}: Props) {
             <CardWrapper className="px-6 w-full lg:w-5/12">
               <h1 className=" font-semibold">Conversion</h1>
               <div className="w-full h-10 border rounded-lg ">
+<<<<<<< HEAD
                 <select className="bg-transparent  w-2/12 bg-none h-9 mx-2 border-r text-center text-sm">
+=======
+                <select className="bg-transparent w-2/12 bg-none h-9 mx-2 border-r text-center text-sm">
+>>>>>>> a54a6db7f47c65d4fc2656c9ab1011c9a07fd9f8
                   <option value="USD">€ </option>
                   <option value="EUR">€</option>
                   <option value="GBP">₹</option>
                   <option value="GBP">.ر.ق</option>
                 </select>
                 <input
+<<<<<<< HEAD
                   className="bg-transparent w-9/12 h-9  text-sm  outline-none text-center "
+=======
+                  className=" bg-transparent w-9/12 h-9  text-sm  outline-none text-center "
+>>>>>>> a54a6db7f47c65d4fc2656c9ab1011c9a07fd9f8
                   id="name"
                   placeholder="Enter amount"
                 />
